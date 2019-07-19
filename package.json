@@ -1,0 +1,25 @@
+{
+  "name": "Point-and-Click",
+  "version": "1.0.0",
+  "description": "This game was created with react",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.8.6",
+    "yarn": "^1.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyromaniac14281/Clicky-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pyromaniac14281/Clicky-Game/issues"
+  },
+  "homepage": "https://github.com/pyromaniac14281/Clicky-Game#readme"
+}
