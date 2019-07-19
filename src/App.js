@@ -40,3 +40,51 @@ class App extends Component {
       })
     }
   }
+  handleClick = id => {
+    // const newArray = this.state.selected
+    if (this.state.selected.includes(id)) {
+      this.setState({
+        selected: [],
+        message: 'YOU LOSE!',
+        currentScore: 0        
+      })
+      this.handleUpdateTopScore();
+    } else {
+      this.setState({
+        selected: this.state.selected.concat(id),
+        currentScore: this.state.currentScore + 1,
+        message: 'Good Job!'
+      })
+    }
+    this.handleShuffle();
+  }
+
+  render() {
+    return (
+      <div className="App" style={styles.mainContainer}>
+
+        <Header
+          currentScore={this.state.currentScore}
+          topScore={this.state.topScore}
+          message={this.state.message}
+        />
+
+        <div style={styles.cardContainer}>
+          {this.state.cards.map(card => (
+            <Card
+              handleClick={this.handleClick}
+              id={card.id}
+              key={card.id}
+              name={card.name}
+              image={card.image}
+            />
+          ))}
+        </div>
+
+      </div>
+    );
+
+    }
+
+}
+
