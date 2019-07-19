@@ -88,3 +88,16 @@ class App extends Component {
 
 }
 
+const styles = {
+    cardContainer: {
+      display: 'flex',
+      flexFlow: 'wrap'
+    },
+  
+    mainContainer: {
+      width: 808,
+      padding: 45
+    }
+  }
+  
+  export default App;
